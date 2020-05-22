@@ -7,15 +7,7 @@ class Menu extends Component{
         super(props);
      
     }
-
- 
-   componentDidMount() {
-        console.log('Menu component componentDidMount is invoked');
-    }
-
     
-
-
     render() {
         const menu = this.props.dishes.map((dish) => {
             return (

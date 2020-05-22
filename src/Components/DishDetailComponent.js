@@ -3,6 +3,14 @@ import { Card, CardImg, CardBody, CardText, CardTitle } from 'reactstrap';
 
 class DishDetail extends Component {
 
+    componentDidMount() {
+        console.log('Dishdetail component componentDidMount is invoked');
+    }
+
+    componentDidUpdate(){
+        console.log('Dishdetail component componentDidUpdate is invoked');
+    }
+
     renderComments(comments) {
         
         if (comments == null) {
@@ -55,6 +63,9 @@ class DishDetail extends Component {
     }
 
     render() {
+
+        console.log('Dishdetail component render is invoked');
+
         const dish = this.props.dish;
         if (dish == null) {
             return (<div></div>)
