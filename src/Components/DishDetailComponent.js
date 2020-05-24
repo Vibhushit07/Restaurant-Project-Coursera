@@ -37,6 +37,8 @@ import { Card, CardImg, CardBody, CardText, CardTitle } from 'reactstrap';
 
     function RenderDish({ dish }) {
 
+        console.log("REnder Dish " + dish.image);
+
         if (dish != null) {
             return (
                 <div className='col-12 col-md-5 m-1'>
