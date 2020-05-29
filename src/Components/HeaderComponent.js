@@ -37,7 +37,7 @@ class Header extends Component {
         return(
             // <>  {/* Short form of React.Fragment*/ }
             <React.Fragment>
-                <Navbar dark expand = "md">
+                <Navbar dark expand = "md" color = "primary">
                     <div className = "container">
                         <NavbarToggler onClick = {this.toggleNav} />
                         <NavbarBrand className="mr-auto" href="/">
