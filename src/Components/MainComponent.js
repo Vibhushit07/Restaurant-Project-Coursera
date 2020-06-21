@@ -47,12 +47,12 @@ class Main extends Component {
     const HomePage = () => {
 
       return(
-        <Home dish = { this.props.dishes.dishes.filter( (dish) => dish.featured)[0] }
+        <Home dishes = { this.props.dishes.dishes.filter( (dish) => dish.featured)[0] }
             dishesLoading = { this.props.dishes.isLoading }
-            dishesErrMess = { this.props.dishes.errMess }
+            dishesErrMess = { this.props.dishes.errmess }
             promotions = { this.props.promotions.promotions.filter( (promo) => promo.featured)[0] }
             promosLoading = { this.props.promotions.isLoading }
-            promosErrMess = { this.props.promotions.errMess }
+            promosErrMess = { this.props.promotions.errmess }
             leaders = { this.props.leaders.filter( (leader) => leader.featured)[0] }
         />
       );
