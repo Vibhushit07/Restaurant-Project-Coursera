@@ -159,7 +159,7 @@ export const addPromos = (promos) => ({
 });
 
 export const fetchLeaders = () => (dispatch) => {
-    dispatch(LeadersLoading(true));
+    dispatch(leadersLoading(true));
 
     return fetch(baseUrl + 'leaders')
         .then(response => {
